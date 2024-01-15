@@ -1,1 +1,10 @@
 image: gitpod/workspace-dotnet
+
+tasks:
+    - name: backend
+      # change working directory as per configured in `checkoutLocation`
+      # which is configured above as `/workspaces/backend`
+      before: |
+          cd ./teste.helloWorld
+      init: |
+          echo "teste001"
